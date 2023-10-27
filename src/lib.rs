@@ -1,4 +1,5 @@
 #![feature(variant_count)]
+#![feature(exclusive_range_pattern)]
 
 mod utils;
 
@@ -334,8 +335,8 @@ impl Game {
         let fps = get_fps();
 
         let color = match fps {
-            (29..=15) => ORANGE,
             (0..15) => RED,
+            (15..30) => ORANGE,
             _ => LIME,
         };
 

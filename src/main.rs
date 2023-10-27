@@ -21,9 +21,10 @@ async fn main() {
 
 fn window_conf() -> Conf {
     Conf {
-        window_title: "Demo".to_owned(),
+        window_title: "Knight game".to_owned(),
         window_width: SCREEN_WIDTH as _,
         window_height: SCREEN_HEIGHT as _,
+        icon: None,
         ..Default::default()
     }
 }
